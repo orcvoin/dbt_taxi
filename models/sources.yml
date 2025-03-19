@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: taxi
+    database: default
+    tables:
+      - name: trips_chicago
+        description: "Данные о поездках такси в Чикаго"
+        columns:
+          - name: taxi_id
+            description: "Уникальный идентификатор такси"
+          - name: trip_id
+            description: "Уникальный идентификатор поездки"
+          - name: pickup_datetime
+            description: "Дата и время начала поездки"
+          - name: dropoff_datetime
+            description: "Дата и время завершения поездки"
+          - name: tip
+            description: "Сумма чаевых"
+          - name: fare
+            description: "Стоимость поездки"
