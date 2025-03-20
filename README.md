@@ -12,6 +12,7 @@
 ### Для запуска:
 * `run dbt`
 * Выгрузка результатов в google spreadsheet `python3 upload_to_gsheets.py`
+* В корневой папке должен лежать валидный сервисный ключ с неймингом `key.json` 
 
 ### Конфиг
 * зависимости в `requirements.txt`
