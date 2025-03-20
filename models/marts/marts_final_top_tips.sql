@@ -1,4 +1,8 @@
-{{ config(materialized='table') }}
+{{ config(
+    materialized='incremental',
+    engine='ReplacingMergeTree()',
+    order_by='(taxi_id, year_month)'
+) }}
 
 WITH tips_per_month AS (
     SELECT
